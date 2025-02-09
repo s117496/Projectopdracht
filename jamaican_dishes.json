@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "name": "Ackee and Saltfish",
+    "description": "Het nationale gerecht van Jamaica, gemaakt met ackee vrucht en gezouten kabeljauw.",
+    "requiredEquipmentId": 1,
+    "image": "https://example.com/images/ackee-and-saltfish.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Jerk Chicken",
+    "description": "Kip gemarineerd in pittige kruiden en gegrild op pimenthout.",
+    "requiredEquipmentId": 2,
+    "image": "https://example.com/images/jerk-chicken.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Oxtail Stew",
+    "description": "Langzaam gestoofde ossenstaart met bonen en kruiden.",
+    "requiredEquipmentId": 3,
+    "image": "https://example.com/images/oxtail-stew.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Curry Goat",
+    "description": "Geitenvlees gestoofd in een rijke curry saus.",
+    "requiredEquipmentId": 4,
+    "image": "https://example.com/images/curry-goat.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Fried Plantains",
+    "description": "Zoete bakbananen gebakken tot ze goudbruin zijn.",
+    "requiredEquipmentId": 5,
+    "image": "https://example.com/images/fried-plantains.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Rice and Peas",
+    "description": "Gekookte rijst met kokosmelk en rode kidneybonen.",
+    "requiredEquipmentId": 6,
+    "image": "https://example.com/images/rice-and-peas.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Jamaican Patty",
+    "description": "Een bladerdeeg gevuld met gekruid rundvlees, kip of groenten.",
+    "requiredEquipmentId": 7,
+    "image": "https://example.com/images/jamaican-patty.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Escovitch Fish",
+    "description": "Gebakken vis met een pittige azijnsaus en groenten.",
+    "requiredEquipmentId": 8,
+    "image": "https://example.com/images/escovitch-fish.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Bammy",
+    "description": "Cassave brood dat wordt gebakken of gefrituurd, vaak geserveerd met vis.",
+    "requiredEquipmentId": 9,
+    "image": "https://example.com/images/bammy.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Pepper Pot Soup",
+    "description": "Een traditionele soep met rundvlees, spinazie en kruiden.",
+    "requiredEquipmentId": 10,
+    "image": "https://example.com/images/pepper-pot-soup.jpg"
+  }
+]
