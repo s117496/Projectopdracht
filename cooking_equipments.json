@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "name": "Steel Pan",
+    "description": "Grote pan voor het sauteren van ackee en zoutvis."
+  },
+  {
+    "id": 2,
+    "name": "Grill",
+    "description": "Houtskoolgrill of rookoven voor het bereiden van Jerk Chicken."
+  },
+  {
+    "id": 3,
+    "name": "Dutch Pot",
+    "description": "Gietijzeren stoofpot voor het langzaam garen van ossenstaartstoofpot."
+  },
+  {
+    "id": 4,
+    "name": "Pressure Cooker",
+    "description": "Snelkookpan om geitenvlees mals te maken voor Curry Goat."
+  },
+  {
+    "id": 5,
+    "name": "Frying Pan",
+    "description": "Koekenpan voor het bakken van bakbananen."
+  },
+  {
+    "id": 6,
+    "name": "Rice Cooker",
+    "description": "Rijstkoker voor het bereiden van rijst en bonen met kokosmelk."
+  },
+  {
+    "id": 7,
+    "name": "Oven",
+    "description": "Oven voor het bakken van Jamaicaanse pasteitjes."
+  },
+  {
+    "id": 8,
+    "name": "Deep Fryer",
+    "description": "Friteuse voor het frituren van vis voor Escovitch Fish."
+  },
+  {
+    "id": 9,
+    "name": "Griddle",
+    "description": "Bakplaat voor het bereiden van Bammy."
+  },
+  {
+    "id": 10,
+    "name": "Soup Pot",
+    "description": "Grote soeppan voor het maken van Pepper Pot Soup."
+  }
+]
