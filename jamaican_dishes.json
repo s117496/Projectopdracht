@@ -3,70 +3,217 @@
     "id": 1,
     "name": "Ackee and Saltfish",
     "description": "Het nationale gerecht van Jamaica, gemaakt met ackee vrucht en gezouten kabeljauw.",
-    "requiredEquipmentId": 1,
+    "calorieën": 350,
+    "isVegetarian": false,
+    "createdAt": "2024-02-10",
+    "difficulty": "gemiddeld",
+    "ingredients": [
+      "ackee",
+      "zoutvis",
+      "ui",
+      "tomaat",
+      "peper"
+    ],
+    "requiredEquipment": {
+      "id": 1,
+      "name": "Steel Pan",
+      "description": "Grote pan voor het sauteren van ackee en zoutvis."
+    },
     "image": "https://github.com/s117496/Projectopdracht/blob/main/images/AckeeandSaltfish.png?raw=true"
   },
   {
     "id": 2,
     "name": "Jerk Chicken",
     "description": "Kip gemarineerd in pittige kruiden en gegrild op pimenthout.",
-    "requiredEquipmentId": 2,
+    "calorieën": 450,
+    "isVegetarian": false,
+    "createdAt": "2024-02-08",
+    "difficulty": "moeilijk",
+    "ingredients": [
+      "kip",
+      "piment",
+      "knoflook",
+      "ui",
+      "limoen"
+    ],
+    "requiredEquipment": {
+      "id": 2,
+      "name": "Grill",
+      "description": "Houtskoolgrill of rookoven voor het bereiden van Jerk Chicken."
+    },
     "image": "https://github.com/s117496/Projectopdracht/blob/main/images/Jerk_chiken.png?raw=true"
   },
   {
     "id": 3,
     "name": "Oxtail Stew",
     "description": "Langzaam gestoofde ossenstaart met bonen en kruiden.",
-    "requiredEquipmentId": 3,
+    "calorieën": 600,
+    "isVegetarian": false,
+    "createdAt": "2024-01-30",
+    "difficulty": "moeilijk",
+    "ingredients": [
+      "ossenstaart",
+      "bonen",
+      "wortel",
+      "tijm",
+      "knoflook"
+    ],
+    "requiredEquipment": {
+      "id": 3,
+      "name": "Dutch Pot",
+      "description": "Gietijzeren stoofpot voor het langzaam garen van ossenstaartstoofpot."
+    },
     "image": "https://github.com/s117496/Projectopdracht/blob/main/images/Oxtail_stew.png?raw=true"
   },
   {
     "id": 4,
     "name": "Curry Goat",
     "description": "Geitenvlees gestoofd in een rijke curry saus.",
-    "requiredEquipmentId": 4,
+    "calorieën": 500,
+    "isVegetarian": false,
+    "createdAt": "2024-02-05",
+    "difficulty": "gemiddeld",
+    "ingredients": [
+      "geitenvlees",
+      "currypoeder",
+      "ui",
+      "knoflook",
+      "wortel"
+    ],
+    "requiredEquipment": {
+      "id": 4,
+      "name": "Pressure Cooker",
+      "description": "Snelkookpan om geitenvlees mals te maken voor Curry Goat."
+    },
     "image": "https://github.com/s117496/Projectopdracht/blob/main/images/Curry_goat.png?raw=true"
   },
   {
     "id": 5,
     "name": "Fried Plantains",
     "description": "Zoete bakbananen gebakken tot ze goudbruin zijn.",
-    "requiredEquipmentId": 5,
+    "calorieën": 250,
+    "isVegetarian": true,
+    "createdAt": "2024-02-07",
+    "difficulty": "makkelijk",
+    "ingredients": [
+      "bakbananen",
+      "olie",
+      "zout"
+    ],
+    "requiredEquipment": {
+      "id": 5,
+      "name": "Frying Pan",
+      "description": "Koekenpan voor het bakken van bakbananen."
+    },
     "image": "https://github.com/s117496/Projectopdracht/blob/main/images/Fried_plantain.png?raw=true"
   },
   {
     "id": 6,
     "name": "Rice and Peas",
     "description": "Gekookte rijst met kokosmelk en rode kidneybonen.",
-    "requiredEquipmentId": 6,
+    "calorieën": 400,
+    "isVegetarian": true,
+    "createdAt": "2024-02-06",
+    "difficulty": "makkelijk",
+    "ingredients": [
+      "rijst",
+      "kokosmelk",
+      "rode bonen",
+      "tijm",
+      "knoflook"
+    ],
+    "requiredEquipment": {
+      "id": 6,
+      "name": "Rice Cooker",
+      "description": "Rijstkoker voor het bereiden van rijst en bonen met kokosmelk."
+    },
     "image": "https://github.com/s117496/Projectopdracht/blob/main/images/RicenBeans.png?raw=true"
   },
   {
     "id": 7,
     "name": "Jamaican Patty",
     "description": "Een bladerdeeg gevuld met gekruid rundvlees, kip of groenten.",
-    "requiredEquipmentId": 7,
+    "calorieën": 300,
+    "isVegetarian": false,
+    "createdAt": "2024-02-04",
+    "difficulty": "gemiddeld",
+    "ingredients": [
+      "bladerdeeg",
+      "rundvlees",
+      "kruiden",
+      "ui",
+      "knoflook"
+    ],
+    "requiredEquipment": {
+      "id": 7,
+      "name": "Oven",
+      "description": "Oven voor het bakken van Jamaicaanse pasteitjes."
+    },
     "image": "https://github.com/s117496/Projectopdracht/blob/main/images/Jamaican_patty.png?raw=true"
   },
   {
     "id": 8,
     "name": "Escovitch Fish",
     "description": "Gebakken vis met een pittige azijnsaus en groenten.",
-    "requiredEquipmentId": 8,
+    "calorieën": 450,
+    "isVegetarian": false,
+    "createdAt": "2024-02-09",
+    "difficulty": "moeilijk",
+    "ingredients": [
+      "vis",
+      "azijn",
+      "wortel",
+      "paprika",
+      "ui"
+    ],
+    "requiredEquipment": {
+      "id": 8,
+      "name": "Deep Fryer",
+      "description": "Friteuse voor het frituren van vis voor Escovitch Fish."
+    },
     "image": "https://github.com/s117496/Projectopdracht/blob/main/images/Escovitch_fish.png?raw=true"
   },
   {
     "id": 9,
     "name": "Bammy",
     "description": "Cassave brood dat wordt gebakken of gefrituurd, vaak geserveerd met vis.",
-    "requiredEquipmentId": 9,
+    "calorieën": 350,
+    "isVegetarian": true,
+    "createdAt": "2024-02-02",
+    "difficulty": "makkelijk",
+    "ingredients": [
+      "cassave",
+      "zout",
+      "water",
+      "olie"
+    ],
+    "requiredEquipment": {
+      "id": 9,
+      "name": "Griddle",
+      "description": "Bakplaat voor het bereiden van Bammy."
+    },
     "image": "https://github.com/s117496/Projectopdracht/blob/main/images/Bammy.png?raw=true"
   },
   {
     "id": 10,
     "name": "Pepper Pot Soup",
     "description": "Een traditionele soep met rundvlees, spinazie en kruiden.",
-    "requiredEquipmentId": 10,
+    "calorieën": 550,
+    "isVegetarian": false,
+    "createdAt": "2024-01-28",
+    "difficulty": "moeilijk",
+    "ingredients": [
+      "rundvlees",
+      "spinazie",
+      "paprika",
+      "knoflook",
+      "ui"
+    ],
+    "requiredEquipment": {
+      "id": 10,
+      "name": "Soup Pot",
+      "description": "Grote soeppan voor het maken van Pepper Pot Soup."
+    },
     "image": "https://github.com/s117496/Projectopdracht/blob/main/images/Pepper_pot_soup.png?raw=true"
   }
 ]
