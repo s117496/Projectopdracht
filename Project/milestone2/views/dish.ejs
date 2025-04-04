@@ -1,0 +1,39 @@
+<%- include("partials/header") %>
+
+<header>
+    <h1><%= dish.name %></h1>
+    <img src="<%= dish.image %>" alt="<%= dish.name %>" class="dish-image">
+</header>
+
+<section class="dish-detail">
+    <div class="detail-item">
+        <strong>Beschrijving:</strong> <%= dish.description %>
+    </div>
+    <div class="detail-item">
+        <strong>Calorieën:</strong> <%= dish.calorieën %> kcal
+    </div>
+    <div class="detail-item">
+        <strong>Vegetarisch:</strong> <%= dish.isVegetarian ? 'Ja' : 'Nee' %>
+    </div>
+    <div class="detail-item">
+        <strong>Moeilijkheidsgraad:</strong> <%= dish.difficulty %>
+    </div>
+    <div class="detail-item">
+        <strong>Ingrediënten:</strong>
+        <ul>
+            <% dish.ingredients.forEach(function(ingredient) { %>
+                <li><%= ingredient %></li>
+            <% }) %>
+        </ul>
+    </div>
+    <div class="detail-item">
+        <strong>Benodigd Keukengerei:</strong>
+        <ul>
+            <li><strong><%= dish.requiredEquipment.name %></strong>: <%= dish.requiredEquipment.description %></li>
+        </ul>
+    </div>
+</section>
+
+<a href="/" class="back-link">Terug naar de lijst van gerechten</a>
+
+<%- include("partials/footer") %>

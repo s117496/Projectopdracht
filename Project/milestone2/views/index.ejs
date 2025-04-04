@@ -1,0 +1,45 @@
+<%- include("partials/header") %>
+    <section id="gerechten" class="section">
+        <div class="container">
+            
+        </div>
+    </section>
+
+    <section id="over" class="section">
+        <div class="container">
+            <div class="search-container">
+                <form action="/" method="get">
+                    <input type="text" name="search" value="<%= searchQuery %>" placeholder="Zoek een gerecht..." />
+                    <button type="submit">Zoeken</button>
+                </form>
+                <form action="/" method="get">
+                    <button type="submit" name="sort" value="<%= sortDirection === 'desc' ? 'asc' : 'desc' %>">
+                        Sorteer <%= sortDirection === 'desc' ? 'oplopend' : 'aflopend' %>
+                    </button>
+                </form>
+            </div>
+            <h2>Over Jamaica</h2>
+            <p>Jamaica is een eiland in de Caribische Zee, beroemd om zijn tropische klimaat, rijke cultuur en heerlijk eten. De keuken van Jamaica is een mengelmoes van Afrikaanse, Europese en Aziatische invloeden, wat resulteert in een unieke en smaakvolle ervaring.</p>
+            <h2>Jamaicaanse Gerechten</h2>
+                <% dishes.forEach(dish => {%>
+                    <div class="gerecht">
+                        <img src="<%= dish.image %>" alt="<%= dish.name %> " width="200px">
+                        <div class="gerecht-info">
+                            <h2><a href="dish/<%= dish.id %>"><%= dish.name %></a></h2>
+                            <p><%= dish.description %></p>
+                        </div>
+                    </div>
+                    <div class="tags">
+                        <% if (dish.vegetarish) { %>
+                            <span class="tag vegetarian">Vegetarish</span>
+                        <% } else {%> 
+                            <span class="tag ">Niet Vegetarish</span>
+                            <% } %>
+                        
+                        <span class="tag difficulty"><%= dish.difficulty %></span>
+                        <span class="tag spicy"><%= dish.calorieën %></span>
+                    </div>
+               <% }); %>
+        </div>
+    </section>
+    <%- include("partials/footer") %>
