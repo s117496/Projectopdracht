@@ -1,4 +1,4 @@
-/* Basisinstellingen */
+/* Reset en basis */
 * {
   margin: 0;
   padding: 0;
@@ -13,8 +13,10 @@ body {
 }
 
 .container {
-  width: 80%;
+  width: 90%;
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 20px;
 }
 
 /* Header */
@@ -22,6 +24,7 @@ header {
   background-color: #ff6f00;
   padding: 20px 0;
   color: white;
+  margin-bottom: 0%;
 }
 
 header h1 {
@@ -33,6 +36,7 @@ nav ul {
   display: flex;
   justify-content: center;
   list-style: none;
+  margin-top: 10px;
 }
 
 nav ul li {
@@ -50,15 +54,17 @@ nav ul li a:hover {
   color: #f1c40f;
 }
 
-/* Zoek balk*/
+/* search */
+
 .search-container {
   position: relative;
   width: 300px;
+  margin: 20px auto;
 }
 
 .search-bar {
   width: 100%;
-  padding: 10px;
+  padding: 10px 15px;
   border: 2px solid #ccc;
   border-radius: 25px;
   font-size: 1em;
@@ -77,62 +83,221 @@ nav ul li a:hover {
   color: #aaa;
 }
 
-/* Sectie Gerechten */
-/* .section {
-  padding: 0px 0;
-} */
-
-#gerechten {
-  background-color: #f9f9f9;
-}
-
-#gerechten h2 {
-  text-align: center;
-  margin-bottom: 30px;
-  font-size: 2.5em;
-  color: #ff6f00;
-}
-
-.gerecht {
+.form-controls {
   display: flex;
-  margin-bottom: 30px;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
-.gerecht img {
-  width: 300px;
-  height: 200px;
-  object-fit: cover;
-  margin-right: 20px;
-  border-radius: 8px;
-}
 
-.gerecht-info h3 {
-  font-size: 1.8em;
-  color: #ff6f00;
-  margin-bottom: 10px;
-}
-
-.gerecht-info p {
-  font-size: 1.1em;
-  color: #555;
-}
-
-/* Sectie Over */
-#over {
+/* About Jamaica */
+#about {
   background-color: #fff;
+  padding: 20px 10px;
+  margin-bottom: 20px;
+  margin-top: 0%;
 }
 
-#over h2 {
+#about h2 {
   text-align: center;
   font-size: 2.5em;
   color: #ff6f00;
   margin-bottom: 20px;
 }
 
-#over p {
+#about p {
   font-size: 1.2em;
   text-align: center;
   color: #555;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Container for the main content */
+/* Section Styling */
+.section {
+  padding: 2rem;
+  background-color: #f8f9fa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Dish layout */
+.dishes-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Each dish item */
+.dish {
+  display: flex;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  padding: 1rem;
+  align-items: center;
+}
+
+.dish img {
+  width: 200px;
+  height: auto;
+  border-radius: 0.5rem;
+  margin-right: 1.5rem;
+  flex-shrink: 0;
+}
+
+.dish-info {
+  flex: 1;
+}
+
+.dish-info h2 {
+  font-size: 1.5rem;
+  margin: 0 0 0.5rem;
+}
+
+.dish-info a {
+  color: #2c3e50;
+  text-decoration: none;
+}
+
+.dish-info p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Tags section */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+/* Tag styles */
+.tag {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.8rem;
+  border-radius: 20px;
+  color: white;
+}
+
+.tag-vegetarian {
+  background-color: #27ae60;
+}
+
+.tag-difficulty {
+  background-color: #2980b9;
+}
+
+.tag-calories {
+  background-color: #f39c12;
+}
+
+.tag-edit {
+  background-color: #e67e22;
+  border: none;
+  cursor: pointer;
+}
+
+.tag-edit:hover {
+  background-color: #d35400;
+}
+
+/* Admin buttons */
+.admin-buttons {
+  margin-left: auto;
+}
+
+/* Logout Button */
+.logout-btn {
+  background-color: #e74c3c;
+  color: white;
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 1rem 0;
+}
+
+.logout-btn a {
+  color: white;
+  text-decoration: none;
+}
+
+.logout-btn:hover {
+  background-color: #c0392b;
+}
+
+
+
+/* dish */
+.dish-detail {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+header h1 {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.dish-image {
+  display: block;
+  margin: 0 auto 1.5rem auto;
+  border-radius: 0.5rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.detail-item {
+  margin-bottom: 1.5rem;
+}
+
+.detail-item strong {
+  color: #333;
+  font-weight: bold;
+}
+
+.detail-item ul {
+  padding-left: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+.detail-item li {
+  margin-bottom: 0.3rem;
+}
+
+.back-link {
+  display: block;
+  text-align: center;
+  margin: 2rem auto;
+  padding: 0.7rem 1.5rem;
+  background-color: #28a745;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease;
+  max-width: fit-content;
+}
+
+.back-link:hover {
+  background-color: #218838;
 }
 
 /* Footer */
@@ -144,35 +309,147 @@ nav ul li a:hover {
 }
 
 .footer h2 {
-  font-size: 2.5em;
+  font-size: 2em;
   margin-bottom: 10px;
 }
 
 .footer p {
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
 
-.tags {
-  margin-top: 10px;
+/* Responsiv */
+@media (max-width: 768px) {
+  .dishes-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dish {
+    width: 90%;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  .search-container {
+    width: 90%;
+  }
 }
 
-.tag {
-  display: inline-block;
-  padding: 5px 10px;
-  margin: 5px;
+/* Shared styles for login and register sections */
+.login-section,
+.register-section {
+  max-width: 400px;
+  margin: 3rem auto;
+  padding: 2rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-section h2,
+.register-section h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.login-section .form-group,
+.register-section .form-group {
+  margin-bottom: 1rem;
+}
+
+.login-section label,
+.register-section label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.login-section input,
+.register-section input {
+  width: 100%;
+  padding: 0.5rem;
   border-radius: 5px;
-  font-size: 12px;
+  border: 1px solid #ccc;
+}
+
+.login-section button,
+.register-section button {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 1rem;
+  background-color: #007bff;
   color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.vegetarian {
+.login-section button:hover,
+.register-section button:hover {
+  background-color: #0056b3;
+}
+
+.login-section .secondary-btn,
+.register-section .secondary-btn {
+  background-color: #6c757d;
+  margin-top: 0.5rem;
+}
+
+.login-section .secondary-btn:hover,
+.register-section .secondary-btn:hover {
+  background-color: #545b62;
+}
+
+@media (max-width: 500px) {
+  .login-form {
+    padding: 25px 20px;
+  }
+}
+
+.edit-dish-section {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.edit-dish-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+textarea,
+select {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.btn-save {
   background-color: #28a745;
+  color: white;
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
 }
 
-.difficulty {
-  background-color: #ffc107;
-}
-
-.spicy {
-  background-color: #dc3545;
+.btn-save:hover {
+  background-color: #218838;
 }

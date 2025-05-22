@@ -1,4 +1,7 @@
-export interface Dishes {
+import { ObjectId } from "mongodb";
+
+export interface Dish {
+    _id: ObjectId
     id: number,
     name: string,
     description: string,
@@ -13,4 +16,20 @@ export interface Dishes {
         description: string
     },
     image: string
+}
+
+export type SortDirection = 1 | -1;
+
+type userRole = "ADMIN" | "USER";
+
+export interface User {
+    name: string;
+    email: string;
+    password: string;
+    role: userRole
+}
+
+export interface FlashMessage {
+    content: string,
+    type: "SUCCESS" | "ERROR"
 }

@@ -1,45 +1,54 @@
 <%- include("partials/header") %>
-    <section id="gerechten" class="section">
+    <section id="dishes" class="section">
         <div class="container">
-            
         </div>
+        <button class="logout-btn"><a href="/logout">Logout</a></button>
     </section>
 
-    <section id="over" class="section">
+    <section id="about" class="section">
         <div class="container">
             <div class="search-container">
-                <form action="/" method="get">
-                    <input type="text" name="search" value="<%= searchQuery %>" placeholder="Zoek een gerecht..." />
-                    <button type="submit">Zoeken</button>
-                </form>
-                <form action="/" method="get">
-                    <button type="submit" name="sort" value="<%= sortDirection === 'desc' ? 'asc' : 'desc' %>">
-                        Sorteer <%= sortDirection === 'desc' ? 'oplopend' : 'aflopend' %>
-                    </button>
-                </form>
+                <div class="form-controls">
+                    <form action="/" method="get">
+                        <input type="text" name="q" value="<%= searchQuery %>" placeholder="Zoek een gerecht..." />
+                        <button type="submit">Zoeken</button>
+                    </form>
+                    <form action="/" method="get">
+                        <input type="hidden" name="sortField" value="<%= sortField %>">
+                        <button type="submit" name="sortDirection" value="<%= sortDirection === 'desc' ? 'asc' : 'desc' %>">
+                            Sorteer <%= sortDirection === 'desc' ? 'oplopend' : 'aflopend' %>
+                        </button>
+                    </form>
+                </div>
             </div>
             <h2>Over Jamaica</h2>
             <p>Jamaica is een eiland in de Caribische Zee, beroemd om zijn tropische klimaat, rijke cultuur en heerlijk eten. De keuken van Jamaica is een mengelmoes van Afrikaanse, Europese en Aziatische invloeden, wat resulteert in een unieke en smaakvolle ervaring.</p>
             <h2>Jamaicaanse Gerechten</h2>
-                <% dishes.forEach(dish => {%>
-                    <div class="gerecht">
-                        <img src="<%= dish.image %>" alt="<%= dish.name %> " width="200px">
-                        <div class="gerecht-info">
-                            <h2><a href="dish/<%= dish.id %>"><%= dish.name %></a></h2>
+            <div class="dishes-container">
+                <% for (const dish of dishes) { %>
+                    <div class="dish">
+                        <img src="<%= dish.image %>" alt="<%= dish.name %>" width="200px">
+                        <div class="dish-info">
+                            <h2><a href="/dish/<%= dish.id %>"><%= dish.name %></a></h2>
                             <p><%= dish.description %></p>
                         </div>
                     </div>
                     <div class="tags">
-                        <% if (dish.vegetarish) { %>
-                            <span class="tag vegetarian">Vegetarish</span>
-                        <% } else {%> 
-                            <span class="tag ">Niet Vegetarish</span>
+                        <% if (dish.isVegetarian) { %>
+                            <span class="tag tag-vegetarian">Vegetarisch</span>
+                            <% } else { %>
+                            <span class="tag">Niet vegetarisch</span>
                             <% } %>
-                        
-                        <span class="tag difficulty"><%= dish.difficulty %></span>
-                        <span class="tag spicy"><%= dish.calorieën %></span>
+                            <span class="tag tag-difficulty">Moeilijkheid: <%= dish.difficulty %></span>
+                            <span class="tag tag-calories">Calorieën: <%= dish.calorieën %></span>
+                            <div class="admin-buttons">
+                            <% if(user && user.role === "ADMIN") {%>
+                            <button class="tag tag-edit" onclick="event.stopPropagation(); window.location.href='/dish/<%= dish.id %>/edit'">Bewerken</button>
+                            <% } %>
+                            </div>
                     </div>
-               <% }); %>
+                <% } %>
+            </div>
         </div>
     </section>
     <%- include("partials/footer") %>

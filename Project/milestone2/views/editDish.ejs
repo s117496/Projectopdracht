@@ -1,0 +1,33 @@
+<%- include("partials/header") %>
+
+<section class="edit-dish-section">
+  <form action="/dish/<%= dish._id %>/edit" method="POST" class="edit-dish-form">
+    <div class="form-group">
+      <label for="name">Naam:</label>
+      <input type="text" id="name" name="name" value="<%= dish.name %>" required>
+    </div>
+
+    <div class="form-group">
+      <label for="description">Beschrijving:</label>
+      <textarea id="description" name="description" required><%= dish.description %></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="vegetarisch">Vegetarisch:</label>
+      <select id="vegetarisch" name="vegetarisch">
+        <option value="true" <%= dish.vegetarisch ? "selected" : "" %>>Ja</option>
+        <option value="false" <%= !dish.vegetarisch ? "selected" : "" %>>Nee</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="difficulty">Moeilijkheidsgraad:</label>
+      <input type="text" id="difficulty" name="difficulty" value="<%= dish.difficulty %>">
+    </div>
+
+    <button type="submit" class="btn-save">Opslaan</button>
+  </form>
+</section>
+<a href="/" class="back-link">Terug naar de lijst van gerechten</a>
+
+<%- include("partials/footer") %>
