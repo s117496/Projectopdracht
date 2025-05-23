@@ -27,7 +27,7 @@ export default function memebershipRoutes() {
                 role: "USER"
             };
             await userCollection.insertOne(newUser);
-            res.redirect("/");
+            res.redirect("/login");
         } catch (error) {
             console.error("registration failed:", error);
             res.status(500).send("Server error.");
