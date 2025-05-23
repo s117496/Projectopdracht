@@ -1,18 +1,18 @@
 <%- include("partials/header") %>
 <section class="register-section">
-    <form action="/register" method="post">
-        <div class="form-group">
-          <label for="name">Naam:</label>
-          <input type="name" id="name" name="name" />
-        </div> 
-        <div class="form-group">
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" />
-        </div>
-        <div class="form-group">
-          <label for="password">Password:</label>
-          <input type="password" id="password" name="password" />
-        </div>
-    </form>
-    <button class="register-btn" onclick="window.location.href='/'">Registreer</button>
-  </section>
+  <form action="/register" method="post">
+    <div class="form-group">
+      <label for="name">Naam:</label>
+      <input type="text" id="name" name="name" required />
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+    </div>
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required />
+    </div>
+    <button class="register-btn" type="submit">Registreer</button>
+  </form>
+</section>
