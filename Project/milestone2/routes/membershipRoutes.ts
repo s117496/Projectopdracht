@@ -9,7 +9,7 @@ export default function memebershipRoutes() {
     router.get("/register", (req, res) => {
         res.render("register")
     });
-    router.post("", async (req, res) => {
+    router.post("/register", async (req, res) => {
         const { name, email, password } = req.body;
         if (!name || !email || !password) {
             return res.status(400).send("Alle velden moeten ingevuld worden.");
